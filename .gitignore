@@ -1,0 +1,36 @@
+node_modules/
+.pnpm-store/
+.turbo/
+dist/
+build/
+.expo/
+*.local
+
+# Env — never commit secrets
+.env
+.env.*
+!.env.example
+apps/api/.env
+apps/mobile/.env
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Logs / coverage
+*.log
+coverage/
+*.tsbuildinfo
+
+# Drizzle / Postgres data
+pgdata/
+drizzle/*.db
+*.sqlite
+*.db-journal
+
+# Expo / mobile
+ios/
+android/

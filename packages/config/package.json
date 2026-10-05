@@ -1,0 +1,20 @@
+{
+  "name": "@repo/config",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./typescript/base": "./typescript/base.json",
+    "./typescript/base.json": "./typescript/base.json",
+    "./eslint/base": "./eslint/base.js",
+    "./eslint/base.js": "./eslint/base.js",
+    "./prettier/base": "./prettier/base.json",
+    "./prettier/base.json": "./prettier/base.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "typescript",
+    "eslint",
+    "prettier"
+  ]
+}

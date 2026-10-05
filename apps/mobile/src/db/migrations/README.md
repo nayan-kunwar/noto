@@ -1,0 +1,2 @@
+-- Phase 2 placeholder. Phase 3 generates real Drizzle migrations via drizzle-kit.
+-- Tables are created by initDb() in src/db/client.ts until migrations land.

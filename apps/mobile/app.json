@@ -1,0 +1,15 @@
+{
+  "expo": {
+    "name": "Noto",
+    "slug": "noto",
+    "scheme": "noto",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "plugins": ["expo-router", "expo-secure-store", "expo-sqlite"],
+    "experiments": { "typedRoutes": true },
+    "ios": { "supportsTablet": true },
+    "android": { "adaptiveIcon": { "backgroundColor": "#ffffff" } }
+  }
+}
