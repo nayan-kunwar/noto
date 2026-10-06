@@ -10,7 +10,9 @@ export async function withRetry<T>(fn: () => Promise<T>, attempt = 0): Promise<T
     return await fn();
   } catch (e) {
     if (attempt >= MAX_RETRIES) throw e;
-    await new Promise((r) => setTimeout(r, backoffDelay(attempt)));
+    await new Promise<void>((resolve) => {
+      setTimeout(() => resolve(), backoffDelay(attempt));
+    });
     return withRetry(fn, attempt + 1);
   }
 }
